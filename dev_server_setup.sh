@@ -7,5 +7,5 @@ bash install_python.sh
 bash install_nano.sh
 bash install_ansible.sh
 bash install_docker.sh
-bash install_jdk
-bash install_jenkins
+bash install_jdk.sh
+bash install_jenkins.sh
