@@ -6,6 +6,8 @@ ufw allow ssh
 ufw allow 931
 #port used by jenkins
 ufw allow 8080
+#port used by docker
+ufw allow 8888
 ufw enable
 
 #bash security_ssh.sh
@@ -15,6 +17,8 @@ echo "DisableForwarding yes" >> /etc/ssh/sshd_config.d/10-my-sshd-settings.conf
 echo "PermitRootLogin no" >> /etc/ssh/sshd_config.d/10-my-sshd-settings.conf
 # disable password based ssh authentication
 echo "PasswordAuthentication no" >> /etc/ssh/sshd_config.d/10-my-sshd-settings.conf
+# reload
+systemctl reload ssh
 
 #bash security_rhosts.sh
 # ingore malicious rhosts file
