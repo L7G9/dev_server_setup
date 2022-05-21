@@ -9,4 +9,5 @@ git clone https://github.com/l7g9/dev_server_setup
 cd dev_server_setup
 sudo bash dev_server_setup.sh
 
-
+# complete setup of git hub
+gh auth login
