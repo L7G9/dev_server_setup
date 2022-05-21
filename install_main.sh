@@ -9,3 +9,5 @@ bash install_ansible.sh
 bash install_docker.sh
 bash install_jdk.sh
 bash install_jenkins.sh
+bash install_tree.sh
+bash install_github.sh
